@@ -204,18 +204,23 @@ body {
     }
 }
 
-.main-contentHeroSection .headlineHero,
+.main-contentHeroSection .logoHeadline,
 .main-contentHeroSection .btn-primary {
     opacity: 0;
     animation: fadeIn 1s forwards;
 }
 
-.main-contentHeroSection .headlineHero {
+.main-contentHeroSection .logoHeadline {
     animation-delay: 0.4s;
 }
 
 .main-contentHeroSection .btn-primary {
     animation-delay: 0.8s;
+}
+
+.logoHeadline {
+    height: 125px;
+    margin-bottom: 3%;
 }
 
 .side-menu {
@@ -1005,6 +1010,11 @@ body {
 
 
 @media (max-width: 1200px) {
+
+    .logoHeadline {
+        height: 100px;
+    }
+
     .navigation {
         padding: 40px;
     }
@@ -1035,6 +1045,10 @@ body {
 }
 
 @media (max-width: 992px) {
+
+    .logoHeadline {
+        height: 90px;
+    }
 
     .entwurf-image-container {
         height: 350px;
@@ -1090,6 +1104,10 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .logoHeadline {
+        height: 80px;
+    }
 
     .entwurf-image-container {
         height: 300px;
@@ -1190,6 +1208,10 @@ body {
 
 @media (max-width: 576px) {
 
+    .logoHeadline {
+        height: 60px;
+    }
+
     .design-entwurfe {
         gap: 20px;
         flex-direction: column;
@@ -1262,6 +1284,10 @@ body {
 }
 
 @media (max-width: 360px) {
+
+    .logoHeadline {
+        height: 50px;
+    }
 
     .headline1,
     .headline2 {
