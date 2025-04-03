@@ -1345,14 +1345,10 @@ body {
 
 
 @media (max-width: 1400px) {
-  .btn-download {
+  .btn-download,
+  .btn-pink, {
     font-size: 1rem;
   }
-
-  .btn-pink {
-    font-size: 1rem;
-  }
-
 }
 
 @media (max-width: 1300px) {
