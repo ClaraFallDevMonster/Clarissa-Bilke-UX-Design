@@ -3,13 +3,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.getElementById("menuButton");
   const menu = document.getElementById("menu");
   const closeButton = document.getElementById("closeButton");
+  const scrollDownButton = document.getElementById("scrollDownButton");
 
   menuButton.addEventListener("click", () => {
     menu.classList.toggle("open");
+  
+    // Button ausblenden wenn Menü offen ist
+    if (menu.classList.contains("open")) {
+      scrollDownButton.classList.add("hidden");
+    } else {
+      scrollDownButton.classList.remove("hidden");
+    }
   });
-
+  
   closeButton.addEventListener("click", () => {
-    menu.classList.toggle("open");
+    menu.classList.remove("open");
+    scrollDownButton.classList.remove("hidden");
   });
 
   // DOWNLOAD BUTTON
@@ -82,4 +91,11 @@ document.getElementById('scrollDownButton').addEventListener('click', function (
   });
 });
 
+// Menü automatisch schließen beim Klick auf Menü-Link
+document.querySelectorAll('.menu-link').forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('open');
+    scrollDownButton.classList.remove('hidden');
+  });
+});
 

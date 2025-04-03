@@ -1,15 +1,24 @@
-//navigation
-const menuButton = document.getElementById("menuButton");
-const menu = document.getElementById("menu");
-const closeButton = document.getElementById("closeButton");
+  // NAVIGATION
+  const menuButton = document.getElementById("menuButton");
+  const menu = document.getElementById("menu");
+  const closeButton = document.getElementById("closeButton");
+  const scrollDownButton = document.getElementById("scrollDownButton");
 
-menuButton.addEventListener("click", () => {
+  menuButton.addEventListener("click", () => {
     menu.classList.toggle("open");
-});
-
-closeButton.addEventListener("click", () => {
-    menu.classList.toggle("open");
-});
+  
+    // Button ausblenden wenn Menü offen ist
+    if (menu.classList.contains("open")) {
+      scrollDownButton.classList.add("hidden");
+    } else {
+      scrollDownButton.classList.remove("hidden");
+    }
+  });
+  
+  closeButton.addEventListener("click", () => {
+    menu.classList.remove("open");
+    scrollDownButton.classList.remove("hidden");
+  });
 
 //Scroll down bubtton
 document.getElementById('scrollDownButton').addEventListener('click', function () {

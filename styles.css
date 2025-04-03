@@ -119,6 +119,12 @@ body {
   /* Füllt das SVG beim Hover-Effekt schwarz */
 }
 
+.scroll-down-button.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
 .logo,
 .menu-button img {
   height: 3.5rem;
@@ -173,7 +179,7 @@ body {
 
 .highlightBlack {
   color: #2B2B2B;
-  /* Dark gray text color */
+  text-shadow: 0 0 1px #fbfbfb, 0 0 1px #fbfbfb;
 }
 
 .highlightPink {
@@ -927,31 +933,29 @@ body {
 }
 
 .slider-track {
-  display: flex;
-  gap: 2rem; /* Abstand zwischen Slides */
-  animation: slideLeft 21s linear infinite;
-  width: calc(10 * 80vw + 9 * 1rem); /* Anzahl * Slidebreite + Gaps */
-}
+    display: flex;
+    gap: 2rem;
+    animation: slideLeft 30s linear infinite; /* schneller! */
+    width: calc(20 * 80vw + 19 * 2rem); /* 20 Logos + 19 Gaps */
+  }
 
-.slide {
-  flex: 0 0 80vw; /* ca. 80% des Viewports */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .slide {
+    flex: 0 0 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.slide img {
-  max-width: 85%;         /* <-- nicht 100%, damit es nie zu breit wird */
-  max-height: 100px;      /* fixe Höhe, die für Mobile gut aussieht */
-  height: auto;
-  width: auto;
-  object-fit: contain;    /* kein Verzerren */
-}
+  .slide img {
+    max-width: 85%;
+    max-height: 100px;
+    object-fit: contain;
+  }
 
-@keyframes slideLeft {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); } /* passt sich automatisch an */
-}
+  @keyframes slideLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* nur bis zur Hälfte */
+  }
 
 
 @keyframes slide {
@@ -1698,6 +1702,10 @@ body {
 @media (max-width: 768px) {
   .slider-container-mobile {
     display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
   }
 }
 

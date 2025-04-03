@@ -111,6 +111,12 @@ body {
     /* Füllt das SVG beim Hover-Effekt schwarz */
 }
 
+.scroll-down-button.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
 .logo,
 .menu-button img {
   height: 3.5rem;
