@@ -1346,7 +1346,7 @@ body {
 
 @media (max-width: 1400px) {
   .btn-download,
-  .btn-pink, {
+  .btn-pink {
     font-size: 1rem;
   }
 }
