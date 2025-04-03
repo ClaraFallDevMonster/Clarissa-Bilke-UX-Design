@@ -1348,6 +1348,11 @@ body {
   .btn-download {
     font-size: 1rem;
   }
+
+  .btn-pink {
+    font-size: 1rem;
+  }
+
 }
 
 @media (max-width: 1300px) {
@@ -1393,8 +1398,7 @@ body {
   }
 
   .btn-primary,
-  .btn-secondary,
-  .btn-download {
+  .btn-secondary {
     font-size: 1rem;
   }
 
@@ -1432,7 +1436,8 @@ body {
 
   .btn-primary,
   .btn-secondary,
-  .btn-download {
+  .btn-download,
+  .btn-pink {
     font-size: 0.9rem;
   }
 
@@ -1510,7 +1515,8 @@ body {
 
   .btn-primary,
   .btn-secondary,
-  .btn-download {
+  .btn-download,
+  .btn-pink {
     font-size: 0.8rem;
     padding: 0.7rem 1rem;
   }
@@ -1528,7 +1534,8 @@ body {
     margin-bottom: 0;
   }
 
-  .btn-download img {
+  .btn-download img,
+  .btn-pink img {
     width: 1rem;
   }
 
@@ -1561,11 +1568,13 @@ body {
 
   .btn-primary,
   .btn-secondary,
-  .btn-download {
+  .btn-download,
+  .btn-pink {
     font-size: 0.6rem;
   }
 
-  .btn-download img {
+  .btn-download img,
+  .btn-pink img {
     width: 0.8rem;
     margin-bottom: 0.2rem;
   }
