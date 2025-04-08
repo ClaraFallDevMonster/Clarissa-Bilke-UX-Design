@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "@",
       "gmx",
       ".de",
-      "Website: https://clarafalldevmonster.github.io/Clarissa-Bilke-UX-Design/",
+      "Website: clarafalldevmonster.github.io/Clarissa-Bilke-UX-Design",
       "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
       "Clarissa Bilke",
       "Diese Webseite dient ausschließlich persönlichen und nicht-kommerziellen Zwecken, insbesondere zur Präsentation meiner kreativen Arbeiten und zur Kontaktaufnahme im Rahmen von Bewerbungen.",
