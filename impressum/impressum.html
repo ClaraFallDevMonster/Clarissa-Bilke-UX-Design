@@ -1,3 +1,4 @@
+<!-- impressum.html -->
 <!DOCTYPE html>
 <html lang="de">
 
@@ -6,15 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarissa Bilke - Impressum</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scraping-protect.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-
-    <!-- Nav -->
-
     <div class="navigation">
         <a href="../index.html">
             <img aria-hidden="true" alt="logo" src="../icon/logoWhite.svg" class="logo" />
@@ -24,13 +23,9 @@
         </button>
     </div>
 
-    <!-- Hero Section -->
-
     <div class="hero-section">
         <div class="main-contentHeroSection">
             <h1 class="headlineHero">Impressum<span class="highlightPink">.</span></h1>
-
-            <!-- SCROLL DOWN BUTTON -->
             <button id="scrollDownButton" class="scroll-down-button">
                 <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 19l-7-7h14l-7 7z" />
@@ -39,9 +34,7 @@
         </div>
 
         <div id="menu" class="side-menu">
-            <button id="closeButton" class="close-button">
-                <span aria-hidden="true">✕</span>
-            </button>
+            <button id="closeButton" class="close-button">✕</button>
             <div class="menu-links">
                 <a href="../projects/projects.html" class="menu-link">Projects</a>
                 <a href="../index.html#aboutme" class="menu-link">About Me</a>
@@ -51,22 +44,17 @@
         </div>
     </div>
 
-    <!-- PROJEKTZIELE -->
-    <div class="projektziele-section">
-        <div class="projektziele-content">
-            <h1 class="headline2">Projektziele &<br>Herausforderungen</h1>
-            <ul class="mainTextBlack">
-                <li>Entwicklung einer hochwertigen Website, die das exklusive Markenbild von Art & Ambiente widerspiegelt</li>
-                <li>Verbindung von Ästhetik, Klang und Raumgefühl im digitalen Raum</li>
-                <li>Darstellung der einzigartigen Leistungen von Innenarchitektur bis High-End-Audio</li>
-                <li>Modernisierung der Website-Struktur bei gleichzeitiger Wahrung der Markenidentität</li>
-                <li>Optimierung für mobile Endgeräte und Touch-Navigation</li>
-                <li>Implementierung in WordPress für einfache redaktionelle Pflege</li>
-            </ul>
+    <div class="impressum">
+        <div class="impressum-content">
+          <h1 class="headline2">Impressum</h1>
+          <div class="mainTextBlack scraping-protected" id="impressum-content">
+            <noscript>
+              <p class="no-js-message">Bitte aktivieren Sie JavaScript, um das Impressum anzuzeigen.</p>
+            </noscript>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- SCROLL UP BUTTON -->
     <button id="scrollUpButton" class="scroll-up-button">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="white" stroke-width="2" stroke-linecap="round"
@@ -105,6 +93,7 @@
         </div>
     </div>
 
+    <script src="scraping-protect.js"></script>
     <script src="main.js"></script>
 </body>
 

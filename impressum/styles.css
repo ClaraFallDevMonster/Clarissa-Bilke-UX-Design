@@ -67,6 +67,22 @@ body {
     z-index: 1;
 }
 
+.no-js-message {
+    font-family: 'Inter', sans-serif;
+    color: #2b2b2b;
+    background-color: #fdf2f8;
+    padding: 2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+    letter-spacing: 0.15em;
+    max-width: 600px;
+    line-height: 1.6;
+    border: 1px solid #ed61ad;
+    box-shadow: 0 0 10px rgba(237, 97, 173, 0.1);
+  }
+  
+
 .main-contentHeroSection {
     position: relative;
     z-index: 2;
@@ -355,7 +371,6 @@ body {
     /* 125% line height */
     letter-spacing: 0.15em;
     /* 15% letter spacing */
-    margin-bottom: 3rem;
 }
 
 .mainTextWhite {
@@ -375,97 +390,18 @@ body {
 
 /* IMPRESSUM */
 
-.projektziele-content .mainTextBlack {
+.impressum-content .mainTextBlack {
     max-width: 100%;
 }
 
-.projektziele-section {
+.impressum {
     background-color: #fbfbfb;
     padding: 10% 12%;
 }
 
-.projektziele-content {
+.impressum-content {
     display: flex;
     flex-direction: column;
-}
-
-.projektziele-content ul {
-    list-style-type: none;
-    /* Entfernt die Standardpunkte */
-    padding-left: 0;
-}
-
-.projektziele-content ul li {
-    position: relative;
-    padding-left: 1.2rem;
-    /* Verringert den Abstand zwischen Punkt und Text */
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    color: #2b2b2b;
-    /* Verwende die bestehende Textfarbe */
-    line-height: 1.5;
-    /* 125% line height */
-    letter-spacing: 0.15em;
-    /* 15% letter spacing */
-}
-
-.projektziele-content ul li::before {
-    content: '•';
-    /* Punkt */
-    position: absolute;
-    left: 0;
-    color: #ED61AD;
-    /* Farbe des Punktes */
-    font-size: 1.1rem;
-    /* Etwas kleinere Punktgröße */
-}
-
-/* ERGEBISSE & ERFOLGE */
-
-.erfolge-content .mainTextBlack {
-    max-width: 100%;
-    margin-bottom: 0;
-}
-
-.erfolge-section {
-    background-color: #fbfbfb;
-    padding: 0 12% 10% 12%;
-}
-
-.erfolge-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.erfolge-content ul {
-    list-style-type: none;
-    /* Entfernt die Standardpunkte */
-    padding-left: 0;
-}
-
-.erfolge-content ul li {
-    position: relative;
-    padding-left: 1.2rem;
-    /* Verringert den Abstand zwischen Punkt und Text */
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    color: #2b2b2b;
-    /* Verwende die bestehende Textfarbe */
-    line-height: 1.5;
-    /* 125% line height */
-    letter-spacing: 0.15em;
-    /* 15% letter spacing */
-}
-
-.erfolge-content ul li::before {
-    content: '•';
-    /* Punkt */
-    position: absolute;
-    left: 0;
-    color: #ED61AD;
-    /* Farbe des Punktes */
-    font-size: 1.1rem;
-    /* Etwas kleinere Punktgröße */
 }
 
 /* SCROLL UP BUTTON */
@@ -744,6 +680,7 @@ body {
 }
 
 @media (min-width: 769px) {
+
     .navigation {
         position: fixed;
         top: 0;
@@ -752,6 +689,12 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .no-js-message {
+        font-size: 0.9rem;
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+      }
 
     .logoHeadline {
         height: 90px;
@@ -853,6 +796,12 @@ body {
 
 @media (max-width: 576px) {
 
+    .no-js-message {
+        font-size: 0.85rem;
+        padding: 1.2rem;
+        margin-bottom: 2.5rem;
+      }
+
     .logoHeadline {
         height: 60px;
     }
@@ -925,6 +874,12 @@ body {
 }
 
 @media (max-width: 360px) {
+
+    .no-js-message {
+        font-size: 0.8rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+      }
 
     .logoHeadline {
         height: 50px;
