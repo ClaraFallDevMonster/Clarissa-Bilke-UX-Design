@@ -707,6 +707,10 @@ p {
 
 @media (max-width: 768px) {
 
+    .mail {
+        font-size: 0.8rem;
+    }
+
     .no-js-message {
         font-size: 0.9rem;
         padding: 1.5rem;
@@ -812,6 +816,10 @@ p {
 }
 
 @media (max-width: 576px) {
+
+    .mail {
+        font-size: 0.6rem;
+    }
 
     .no-js-message {
         font-size: 0.85rem;

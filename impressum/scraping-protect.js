@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ${parts[1]}<br>
       ${parts[2]}<br>
       ${parts[3]}<a href="mailto:${parts[4]}${parts[5]}${parts[6]}${parts[7]}" style="color:#ed61ad">${parts[4]}${parts[5]}${parts[6]}${parts[7]}</a><br>
-      Website:<a href="https://${parts[8]}" style="color:#ed61ad" target="_blank" rel="noopener noreferrer">${parts[8]}</a><br>
+      Website:<a class="mail" href="https://${parts[8]}" style="color:#ed61ad" target="_blank" rel="noopener noreferrer">${parts[8]}</a><br><br>
       ${parts[9]}<br>
       <p>${parts[10]}</p>
       <h1 class="headline2">${parts[11]}</h1>
