@@ -708,7 +708,7 @@ p {
 @media (max-width: 768px) {
 
     .mail {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .no-js-message {
@@ -753,7 +753,7 @@ p {
 
     .headline1,
     .headline2 {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
 
     .headlineHero {
@@ -818,7 +818,7 @@ p {
 @media (max-width: 576px) {
 
     .mail {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     .no-js-message {
@@ -865,7 +865,7 @@ p {
 
     .headline1,
     .headline2 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .headline3 {
